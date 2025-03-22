@@ -4,141 +4,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D-Sec Security - Website Redesign</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>D-Sec Security - Professional Security Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
-    <style>
-        /* Basic Styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #002f6c;
-            color: white;
-            padding: 20px;
-        }
-
-        .hero {
-            background-color: #002f6c;
-            color: white;
-        }
-
-        .container {
-            padding: 30px 15px;
-        }
-
-        .footer {
-            background-color: #002f6c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Add custom form styling */
-        .form-container {
-            margin-top: 20px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="navbar" id="header" data-aos="fade-down" data-aos-duration="600">
+        <div class="container">
+            <div class="navbar-brand">
+                <!-- Add Image Here -->
+                <img src="images/desc.png" alt="D-Sec Security Logo" style="height: 40px; margin-right: 10px;">
 
- <!-- Header -->
- <header class="navbar" id="header" data-aos="fade-in" data-aos-duration="450">
-    <div class="container">
-        <div class="navbar-brand">
-            <h1 class="navbar-item">D-SEC SECUIRTY</h1>
-            <button class="navbar-burger" aria-label="Toggle Navigation" onclick="toggleNav()">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </button>
-        </div>
-        <div id="nav-links" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="about.html">About</a>
-                <a class="navbar-item" href="project.html">Projects</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-                <a class="navbar-item" href="resume.html">Resume</a>
+                <h1 class="navbar-item">D-SEC SECURITY</h1>
+
+                <button class="navbar-burger" aria-label="Toggle Navigation" onclick="toggleNav()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="about.html"><i class="fas fa-info-circle mr-1"></i>About</a>
+                    <a class="navbar-item" href="service.html"><i class="fas fa-concierge-bell mr-1"></i> Services</a>
+                    <a class="navbar-item" href="testimonal.html"><i class="fas fa-star mr-1"></i> Testimonials</a>
+                    <a class="navbar-item" href="#contact"><i class="fas fa-envelope mr-1"></i> Contact</a>
+                    <a class="navbar-item" href="apply.html"><i class="fas fa-envelope mr-1"></i>Apply</a>
+                </div>
             </div>
         </div>
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/Caro1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/caro2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/caro3.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
     </div>
-</header>
+    <br>
 
-    <!-- Hero Section -->
-    <section class="hero is-medium">
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <section class="hero is-medium is-bold" data-aos="fade-in" data-aos-duration="800">
         <div class="hero-body">
-            <div class="container">
-                <h2 class="title">Security Services</h2>
-                <p class="subtitle">We provide top-notch security services to keep your business safe and secure.</p>
+            <div class="container has-text-centered">
+                <h2 class="title" data-aos="fade-up" data-aos-delay="200">Protecting What Matters Most</h2>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="400">
+                    As one of the fastest growing, privately held, U.S.-owned contract security companies in the
+                    United States, we deliver uncompromising protection for your assets and peace of mind.
+                </p>
+                <div class="mt-5" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contact" class="button is-primary is-medium">Get Protected Today</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="container">
-        <h3 class="title">Our Services</h3>
+    <!-- Services Section with Icons and Images -->
+    <section class="container" id="services" data-aos="fade-up">
+        <h3 class="title has-text-centered mb-6">Our Security Solutions</h3>
         <div class="columns">
-            <div class="column is-4">
+            <!-- Residential Security -->
+            <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="box">
-                    <h4 class="subtitle">Residential Security</h4>
-                    <p>We offer home security solutions with the latest technology to keep your family safe.</p>
+                    <div class="has-text-centered mb-4">
+                        <img src="images/residencejpg.jpg" alt="Residential Security"
+                            style="max-height: 200px; width: auto;">
+                    </div>
+                    <h4 class="subtitle has-text-centered">Residential Security</h4>
+                    <p>Advanced home security systems with 24/7 monitoring, smart technology integration, and rapid
+                        response protocols to keep your family and property safe.</p>
                 </div>
             </div>
-            <div class="column is-4">
+            <!-- Commercial Security -->
+            <div class="column is-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="box">
-                    <h4 class="subtitle">Commercial Security</h4>
-                    <p>Our commercial security systems protect your business and employees at all times.</p>
+                    <div class="has-text-centered mb-4">
+                        <img src="images/event sec.jpg" alt="Commercial Security"
+                            style="max-height: 200px; width: auto;">
+                    </div>
+                    <h4 class="subtitle has-text-centered">Commercial Security</h4>
+                    <p>Comprehensive business security solutions including access control, surveillance systems, and
+                        professional guards to protect your assets and employees.</p>
                 </div>
             </div>
-            <div class="column is-4">
+            <!-- Security Consulting -->
+            <div class="column is-4" data-aos="fade-up" data-aos-delay="600">
                 <div class="box">
-                    <h4 class="subtitle">Consulting Services</h4>
-                    <p>We provide expert consulting to design security systems tailored to your needs.</p>
+                    <div class="has-text-centered mb-4">
+                        <img src="images/cttv.jpg" alt="Security Consulting" style="max-height: 200px; width: auto;">
+                    </div>
+                    <h4 class="subtitle has-text-centered">Security Consulting</h4>
+                    <p>Expert risk assessment and tailored security planning from industry professionals to identify
+                        vulnerabilities and implement effective protection strategies.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section (Fillout Integration) -->
-    <section class="container form-container">
-        <h3 class="title">Get in Touch</h3>
-        <form action="https://your-fillout-form-endpoint" method="POST">
-            <div class="field">
-                <label class="label">Full Name</label>
-                <div class="control">
-                    <input class="input" type="text" name="name" required>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                    <input class="input" type="email" name="email" required>
-                </div>
-            </div>
-            <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                    <textarea class="textarea" name="message" required></textarea>
-                </div>
-            </div>
-            <div class="control">
-                <button class="button is-primary" type="submit">Send</button>
-            </div>
-        </form>
+    <!-- Contact Form Section -->
+    <section class="container" id="contact" data-aos="fade-up">
+        <h3 class="title has-text-centered">Get In Touch</h3>
+        <div style="width:100%;height:500px;" data-fillout-id="q77rPUDs4qus" data-fillout-embed-type="standard"
+            data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+        <script src="https://server.fillout.com/embed/v1/"></script>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>&copy; 2025 D-Sec Security. All rights reserved.</p>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4 has-text-centered-mobile has-text-right-tablet">
+                    <h4 class="subtitle mb-4">Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="has-text-centered mt-5">
+                <p>&copy; 2009 D-Sec Security. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS library with custom settings
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Navigation toggle function
+        function toggleNav() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('is-active');
+        }
+    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar" id="header" data-aos="fade-down" data-aos-duration="600">
+        <div class="container">
+            <div class="navbar-brand">
+                <!-- Add Image Here -->
+                <img src="images/desc.png" alt="D-Sec Security Logo" style="height: 40px; margin-right: 10px;">
+
+                <h1 class="navbar-item">D-SEC SECURITY</h1>
+
+                <button class="navbar-burger" aria-label="Toggle Navigation" onclick="toggleNav()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html"><i class="fas fa-info-circle mr-1"></i>Home</a>
+                    <a class="navbar-item" href="about.html"><i class="fas fa-info-circle mr-1"></i>About</a>
+                    <a class="navbar-item" href="testimonal.html"><i class="fas fa-star mr-1"></i> Testimonials</a>
+                    <a class="navbar-item" href="index.html#contact"><i class="fas fa-envelope mr-1"></i> Contact</a>
+                    <a class="navbar-item" href="apply.html"><i class="fas fa-envelope mr-1"></i>Apply</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h1 class="section-title">Our Services</h1>
+            <h4 class="h4-sub">
+                D-Sec Security are highly trained Security Personnel Specializing in Alarm Systems, CCTV Installations,
+                and a Wide Range of Security Officers. Securing is our goal to give our clients peace of mind.
+            </h4>
+
+            <div class="columns is-multiline">
+                <!-- Service Card 1 -->
+                <div class="column is-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h2 class="title">Event Security</h2>
+                            <p>D-Sec Event security will ensure the safety of your event either it be Corporate or
+                                Special, small or big venue events D-Sec Security will give you a peace of mind.</p>
+                            <button class="button is-link learn-more" data-target="service1-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="column is-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="service-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <h2 class="title">CCTV Installation</h2>
+                            <p>Protect your home or business with Surveillance System and Security Camera by D-Sec
+                                Installers</p>
+                            <button class="button is-link learn-more" data-target="service2-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="column is-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="service-icon">
+                                <i class="fas fa-fire-extinguisher"></i>
+                            </div>
+                            <h2 class="title">Alarm Systems</h2>
+                            <p>D-Sec alarm systems for residential homes and commercial businesses.</p>
+                            <button class="button is-link learn-more" data-target="service3-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="column is-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="service-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <h2 class="title">Construction Sites</h2>
+                            <p>D-Sec Security Protect your construction site from vandalism and theft by contracting the
+                                best-trained D-SeC security guards.</p>
+                            <button class="button is-link learn-more" data-target="service4-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="column is-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="service-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h2 class="title">Retail Security</h2>
+                            <p>D-Sec Retail Security reduce shoplifting, theft and vendor fraud, and maintain inventory
+                                accuracy</p>
+                            <button class="button is-link learn-more" data-target="service5-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="column is-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h2 class="title">Property Security</h2>
+                            <p>D-Sec property Security will secure private property, Vacant premises and Empty Lots</p>
+                            <button class="button is-link learn-more" data-target="service6-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1 (for Event Security) -->
+    <div class="modal" id="service1-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <div style="max-width: 45%; padding-right: 20px;">
+                    <!-- Image for Event Security -->
+                    <img src="serviceImages\service1.jpg" alt="Event Security" style="width: 100%; border-radius: 8px;">
+                </div>
+                <div style="max-width: 50%; flex-grow: 1;">
+                    <h3 class="title">Event Security Details</h3>
+                    <p>Ensure the safety and success of your event with professional security services from D-Sec
+                        Security. We specialize in providing comprehensive security for events of all types, from
+                        corporate meetings to large outdoor venues.</p>
+                    <p>Our event security services include:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px; color: #c9c9c9;">
+                        <li>Crowd control and personnel deployment</li>
+                        <li>VIP security and access management</li>
+                        <li>Threat analysis and emergency planning</li>
+                        <li>Mobile patrols and surveillance</li>
+                        <li>Emergency response teams on standby</li>
+                    </ul>
+                    <p>Our trained staff ensures seamless security coverage, whether for a small private affair or a
+                        large public event.</p>
+                    <button class="button is-link close-modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 (for CCTV Installation) -->
+    <div class="modal" id="service2-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <img src="serviceImages\service2.jpg" alt="CCTV Installation">
+            <div class="box">
+                <h3 class="title">CCTV Installation Details</h3>
+                <p>CCTV is an excellent choice for both residential and commercial clients who require top-notch
+                    security to protect homes, work areas, stores, offices, and buildings. Surveillance can effectively
+                    prevent theft and safeguard your property. Don’t delay—protect your assets with a reliable and
+                    skilled security team equipped with advanced technology.</p>
+                <p>Our CCTV installation includes:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px; color: #c9c9c9;">
+                    <li>High-definition camera setups</li>
+                    <li>Remote viewing and recording options</li>
+                    <li>Full-site surveillance coverage</li>
+                </ul>
+                <p>We offer systems that are flexible, scalable, and easy to monitor from any device.</p>
+                <button class="button is-link close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 (for Alarm Systems) -->
+    <div class="modal" id="service3-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <img src="serviceImages\service3.jpg" alt="Alarm Systems">
+            <div class="box">
+                <h3 class="title">Alarm Systems Details</h3>
+                <p>With the economy being what it is, don't you feel more secure knowing your home or business is
+                    safeguarded from theft? D-Sec Alarm Systems are the perfect solution for both residential and
+                    commercial clients, providing top-tier protection with cutting-edge alarm technology.</p>
+                <p>Our alarm systems feature:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px; color: #c9c9c9;">
+                    <li>24/7 monitoring services</li>
+                    <li>Real-time alerts and notifications</li>
+                    <li>Customizable settings for different needs</li>
+                </ul>
+                <p>Our systems provide a proactive approach to security and peace of mind.</p>
+                <button class="button is-link close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 (for Construction Sites) -->
+    <div class="modal" id="service4-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <img src="serviceImages\service4.avif" alt="Construction Sites">
+            <div class="box">
+                <h3 class="title">Construction Sites Details</h3>
+                <p>D-Sec Security provides comprehensive protection for construction sites, guarding against theft,
+                    vandalism, and damage. Our trained security personnel ensure that your valuable assets and equipment
+                    are safe while maintaining tight control over access and site security.</p>
+                <p>Security for construction sites includes:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px; color: #c9c9c9;">
+                    <li>Access control and perimeter surveillance</li>
+                    <li>Asset and equipment protection</li>
+                    <li>Vandalism and theft prevention</li>
+                </ul>
+                <p>Our services ensure that your site is secure, preventing costly losses and delays.</p>
+                <button class="button is-link close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 (for Retail Security) -->
+    <div class="modal" id="service5-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <img src="serviceImages\service5.jpg" alt="Retail Security">
+            <div class="box">
+                <h3 class="title">Retail Security Details</h3>
+                <p>D-Sec Retail Security aims to ensure the safety of customers and employees, as well as prevent
+                    financial loss from theft or other incidents. Our guards use both visible and undercover tactics to
+                    monitor store activity, deterring potential threats while maintaining a safe shopping environment.
+                </p>
+                <p>D-Sec Retail Security’s main objective is to protect the safety and well-being of both customers and
+                    employees in a retail establishment and to prevent financial damage caused by shoplifting, robbery,
+                    or similar dangers.</p>
+                <p>Some of the duties of a D-Sec retail security guard might include:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px; color: #c9c9c9;">
+                    <li>Removing potentially harmful individuals</li>
+                    <li>Using video surveillance equipment</li>
+                    <li>Clear communication with other security personnel</li>
+                </ul>
+                <button class="button is-link close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 (for Property Security) -->
+    <div class="modal" id="service6-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <img src="serviceImages\service6.jpg" alt="Property Security">
+            <div class="box">
+                <h3 class="title">Property Security Details</h3>
+                <p>D-Sec Security offers comprehensive protection for private, empty, and vacant properties across
+                    various sectors. We specialize in securing lots, housing, and businesses, providing top-tier
+                    guarding and patrolling services to ensure your property is always protected.</p>
+                <p>Our property security solutions include:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px; color: #c9c9c9;">
+                    <li>24/7 surveillance monitoring</li>
+                    <li>Gated access control and visitor management</li>
+                    <li>Security patrols and emergency response</li>
+                </ul>
+                <p>We specialize in creating a safe environment for both residential and commercial properties, ensuring
+                    peace of mind for all of our clients.</p>
+                <button class="button is-link close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="service.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2009 D-Sec Security. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

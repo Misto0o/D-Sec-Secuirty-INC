@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Sec Security - Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar" id="header" data-aos="fade-down" data-aos-duration="600">
+        <div class="container">
+            <div class="navbar-brand">
+                <!-- Add Image Here -->
+                <img src="images/desc.png" alt="D-Sec Security Logo" style="height: 40px; margin-right: 10px;">
+
+                <h1 class="navbar-item">D-SEC SECURITY</h1>
+
+                <button class="navbar-burger" aria-label="Toggle Navigation" onclick="toggleNav()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html"><i class="fas fa-info-circle mr-1"></i>Home</a>
+                    <a class="navbar-item" href="about.html"><i class="fas fa-info-circle mr-1"></i>About</a>
+                    <a class="navbar-item" href="service.html"><i class="fas fa-concierge-bell mr-1"></i> Services</a>
+                    <a class="navbar-item" href="testimonal.html"><i class="fas fa-star mr-1"></i> Testimonials</a>
+                    <a class="navbar-item" href="index.html#contact"><i class="fas fa-envelope mr-1"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="container" id="contact" data-aos="fade-up">
+        <h3 class="title has-text-centered">Applicaiton Fourm</h3>
+        <div style="width:100%;height:500px;" data-fillout-id="q77rPUDs4qus" data-fillout-embed-type="standard"
+            data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+        <script src="https://server.fillout.com/embed/v1/"></script>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4 has-text-centered-mobile has-text-right-tablet">
+                    <h4 class="subtitle mb-4">Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="mr-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="has-text-centered mt-5">
+                <p>&copy; 2009 D-Sec Security. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="apply.js"></script>
+<script>
+    // Initialize AOS library with custom settings
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+
+</html>

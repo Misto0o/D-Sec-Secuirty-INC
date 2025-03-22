@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - D-Sec Security</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar" id="header" data-aos="fade-down" data-aos-duration="600">
+        <div class="container">
+            <div class="navbar-brand">
+                <!-- Add Image Here -->
+                <img src="images/desc.png" alt="D-Sec Security Logo" style="height: 40px; margin-right: 10px;">
+
+                <h1 class="navbar-item">D-SEC SECURITY</h1>
+
+                <button class="navbar-burger" aria-label="Toggle Navigation" onclick="toggleNav()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html"><i class="fas fa-info-circle mr-1"></i> Home</a>
+                    <a class="navbar-item" href="service.html"><i class="fas fa-concierge-bell mr-1"></i> Services</a>
+                    <a class="navbar-item" href="testimonal.html"><i class="fas fa-star mr-1"></i> Testimonials</a>
+                    <a class="navbar-item" href="index.html#contact"><i class="fas fa-envelope mr-1"></i> Contact</a>
+                    <a class="navbar-item" href="apply.html"><i class="fas fa-envelope mr-1"></i>Apply</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Image Slider Section -->
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">Simply the best.</h2>
+                <p class="subtitle">Learn more about our mission and values at D-Sec Security.</p>
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <img class="image" src="images/Caro1.jpg" draggable="false" data-aos="fade" data-aos-delay="100" />
+                    <img class="image" src="images/caro2.jpg" draggable="false" data-aos="fade" data-aos-delay="200" />
+                    <img class="image" src="images/caro3.jpg" draggable="false" data-aos="fade" data-aos-delay="300" />
+                    <img class="image" src="images/cttv.jpg" draggable="false" data-aos="fade" data-aos-delay="400" />
+                    <img class="image" src="images/event sec.jpg" draggable="false" data-aos="fade"
+                        data-aos-delay="500" />
+                    <img class="image" src="images/residencejpg.jpg" draggable="false" data-aos="fade"
+                        data-aos-delay="600" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="container">
+        <h3 class="title">Our Mission</h3>
+        <p>Our philosophy is: Protect our client’s premises as if they were our own. Based on that philosophy, we have
+            been protecting people and property at commercial and residential complexes, educational campuses,
+            government buildings, healthcare facilities, construction sites, major airports and high-profile public
+            landmarks. Our work ethic also explains why we have grown significantly, starting as one of the most trusted
+            and reliable security.
+
+            We have been expanding nationally, providing innovative security technology solutions.After all, providing
+            real security (at a realistic price) involves more than posting great security guards -- although we do have
+            the best in the business -- it’s also about providing a total security consulting solution.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2009 D-Sec Security. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS library with custom settings
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script src="about.js"></script>
+</body>
+
+</html>
