@@ -11,7 +11,10 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: #2ecc71 !important;
     font-weight: 600;
 }
@@ -25,10 +28,11 @@ label {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -41,21 +45,22 @@ label {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -63,19 +68,19 @@ label {
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -84,22 +89,28 @@ label {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 /* Header and Navigation */
 header.navbar {
@@ -235,7 +246,8 @@ header h1 {
     color: #2ecc71 !important;
 }
 
-.input, .textarea {
+.input,
+.textarea {
     background-color: #252525;
     border: 1px solid #333;
     color: #e0e0e0;
@@ -243,7 +255,8 @@ header h1 {
     transition: border-color 0.3s ease;
 }
 
-.input:focus, .textarea:focus {
+.input:focus,
+.textarea:focus {
     border-color: #2ecc71;
     box-shadow: 0 0 0 2px rgba(46, 204, 113, 0.2);
 }
@@ -282,6 +295,33 @@ header h1 {
     background: linear-gradient(90deg, transparent, #2ecc71, transparent);
 }
 
+/* footer-icons.css */
+.social-icons a i {
+    color: #22c55e;
+    /* A nice green shade */
+    transition: color 0.2s;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Add fix for footer column alignment */
+.footer .column.is-4 {
+    text-align: center !important;
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+.social-icons a:hover i {
+    color: #16a34a;
+    /* Darker green on hover */
+}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
     .navbar {
@@ -291,19 +331,25 @@ header h1 {
 
     .navbar a {
         font-size: 0.9rem;
-        color: black !important;
+        color: white !important;
     }
-    
+
     .hero .title {
         font-size: 2rem;
     }
-    
+
     .hero .subtitle {
         font-size: 1rem;
     }
-    
+
     .container {
         padding: 30px 15px;
+    }
+
+    .navbar-menu {
+        background-color: #000;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
+        padding: .5rem 0
     }
 }
 
@@ -330,9 +376,11 @@ header h1 {
     0% {
         box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4);
     }
+
     70% {
         box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
     }

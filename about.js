@@ -1,11 +1,13 @@
 const track = document.getElementById("image-track");
 
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+const handleOnDown = e => {
+  track.dataset.mouseDownAt = e.clientX;
+};
 
 const handleOnUp = () => {
   track.dataset.mouseDownAt = "0";
   track.dataset.prevPercentage = track.dataset.percentage;
-}
+};
 
 const handleOnMove = e => {
   if (track.dataset.mouseDownAt === "0") return;
@@ -19,28 +21,23 @@ const handleOnMove = e => {
 
   track.dataset.percentage = nextPercentage;
 
-  track.animate({
-    transform: `translate(${nextPercentage}%, -50%)`
-  }, { duration: 1200, fill: "forwards" });
+  track.animate(
+    { transform: `translate(${nextPercentage}%, -50%)` },
+    { duration: 1200, fill: "forwards" }
+  );
 
   for (const image of track.getElementsByClassName("image")) {
-    image.animate({
-      objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" });
+    image.animate(
+      { objectPosition: `${100 + nextPercentage}% center` },
+      { duration: 1200, fill: "forwards" }
+    );
   }
-}
+};
 
-/* -- Had to add extra lines for touch events -- */
-
-window.onmousedown = e => handleOnDown(e);
-
-window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-window.onmouseup = e => handleOnUp(e);
-
-window.ontouchend = e => handleOnUp(e.touches[0]);
-
-window.onmousemove = e => handleOnMove(e);
+/* -- Use pointer events (works for mouse + touch) -- */
+window.onpointerdown = e => handleOnDown(e);
+window.onpointerup = e => handleOnUp(e);
+window.onpointermove = e => handleOnMove(e);
 
 /* Code above should not be touched */
 function toggleNav() {

@@ -184,6 +184,34 @@ header h1 {
     background: linear-gradient(90deg, transparent, #2ecc71, transparent);
 }
 
+
+/* footer-icons.css */
+.social-icons a i {
+    color: #22c55e;
+    /* A nice green shade */
+    transition: color 0.2s;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Add fix for footer column alignment */
+.footer .column.is-4 {
+    text-align: center !important;
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+.social-icons a:hover i {
+    color: #16a34a;
+    /* Darker green on hover */
+}
+
 /* Media Query for Mobile */
 @media (max-width: 768px) {
     .testimonials {
@@ -203,6 +231,12 @@ header h1 {
 
     .navbar a {
         font-size: 0.9rem;
-        color: black !important;
+        color: white !important;
+    }
+
+    .navbar-menu {
+        background-color: #000;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
+        padding: .5rem 0
     }
 }
